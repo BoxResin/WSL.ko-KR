@@ -1,6 +1,6 @@
 ---
 title: WSL 2 정보
-description: Linux 용 Windows 하위 시스템에 대 한 새 아키텍처 정보 WSL 2 정보
+description: Linux 용 Windows 하위 시스템에 대한 새 아키텍처 정보 WSL 2 정보
 keywords: BashOnWindows, bash, wsl, wsl2, windows, Linux용 windows 하위 시스템, windowssubsystem, ubuntu, debian, suse, windows 10, 설치
 ms.date: 05/30/2019
 ms.topic: article
@@ -15,7 +15,7 @@ ms.locfileid: "74161476"
 ---
 # <a name="about-wsl-2"></a>WSL 2 정보
 
-WSL 2는 Windows에서 ELF64 Linux 이진 파일을 실행하기 위해 Linux 용 Windows 하위 시스템을 지원하는 새 버전의 아키텍처입니다. 주요 목표는 전체 시스템 호출 호환성을 추가하는 것뿐만 아니라 파일 시스템 성능을 높이는 것입니다. 이 새로운 아키텍처는 이러한 Linux 이진 파일이 Windows 및 컴퓨터의 하드웨어와 상호 작용하는 방식을 변경하지만 WSL 1 (현재 널리 사용 가능한 버전)에서와 동일한 사용자 환경을 제공합니다. 개별 Linux 배포판을 WSL 1 배포판 또는 WSL 2 배포판로 실행하거나, 언제든지 업그레이드하거나 다운 그레이드할 수 있으며, WSL 1과 WSL 2를 함께 실행할 수 있습니다. WSL 2는 실제 Linux 커널을 사용하는 완전히 새로운 아키텍처를 사용합니다.
+WSL 2는 Windows에서 ELF64 Linux 이진 파일을 실행하기 위해 Linux 용 Windows 하위 시스템을 지원하는 새 버전의 아키텍처입니다. 주요 목표는 전체 시스템 호출 호환성을 추가하는 것뿐만 아니라 파일 시스템 성능을 높이는 것입니다. 이 새로운 아키텍처는 이러한 Linux 이진 파일이 Windows 및 컴퓨터의 하드웨어와 상호 작용하는 방식을 변경하지만 WSL 1 (현재 널리 사용 가능한 버전)에서와 동일한 사용자 환경을 제공합니다. 개별 Linux 배포판을 WSL 1 배포판 또는 WSL 2 배포판으로 실행하거나, 언제든지 업그레이드하거나 다운그레이드할 수 있으며, WSL 1과 WSL 2를 함께 실행할 수 있습니다. WSL 2는 실제 Linux 커널을 사용하는 완전히 새로운 아키텍처를 사용합니다.
 
 ## <a name="linux-kernel-in-wsl-2"></a>WSL 2의 Linux 커널
 
@@ -23,9 +23,9 @@ WSL 2의 Linux 커널은 kernel.org에서 제공되는 원본을 기반으로 �
 
 또한 이 커널은 오픈 소스가 됩니다. [여기](https://github.com/microsoft/WSL2-Linux-Kernel)에서 Linux 커널의 전체 소스 코드를 찾을 수 있습니다. 이 커널에 대해 자세히 알아보려면 이 블로그 게시물을 작성한 팀이 작성한 [이 블로그 게시물](https://devblogs.microsoft.com/commandline/shipping-a-linux-kernel-with-windows/)을 체크아웃할 수 있습니다.
 
-## <a name="brief-overview-of-the-wsl-2-architecture"></a>WSL 2 아키텍처에 대 한 간략 한 개요
+## <a name="brief-overview-of-the-wsl-2-architecture"></a>WSL 2 아키텍처에 대한 간략한 개요
 
-WSL 2는 최신의 가상화 기술을 사용하여 경량 유틸리티 VM (가상 머신) 내에서 Linux 커널을 실행합니다. 그러나 WSL 2는 기존 VM 환경이 아닙니다. 기존 VM 환경을 부팅하고, 격리하고, 많은 리소스를 소비하고, 리소스를 관리하는 데 시간이 걸릴 수 있습니다. WSL 2에는 이러한 특성이 없습니다. WSL 1을 사용 하면 Windows 및 Linux 간의 높은 수준의 통합, 매우 빠른 부팅 시간, 작은 리소스 공간 및 가장 좋은 방법으로 VM을 구성하거나 관리할 필요가 없습니다. WSL 2는 VM을 사용하지만 WSL 1과 동일한 사용자 환경을 유지하면서 백그라운드에서 관리되고 실행 됩니다.
+WSL 2는 최신의 가상화 기술을 사용하여 경량 유틸리티 VM (가상 머신) 내에서 Linux 커널을 실행합니다. 그러나 WSL 2는 기존 VM 환경이 아닙니다. 기존 VM 환경을 부팅하고, 격리하고, 많은 리소스를 소비하고, 리소스를 관리하는 데 시간이 걸릴 수 있습니다. WSL 2에는 이러한 특성이 없습니다. WSL 1을 사용 하면 Windows 및 Linux 간의 높은 수준의 통합, 매우 빠른 부팅 시간, 작은 리소스 공간 및 가장 좋은 방법으로 VM을 구성하거나 관리할 필요가 없습니다. WSL 2는 VM을 사용하지만 WSL 1과 동일한 사용자 환경을 유지하면서 백그라운드에서 관리되고 실행됩니다.
 
 ## <a name="increased-file-io-performance"></a>파일 IO 성능 향상
 
